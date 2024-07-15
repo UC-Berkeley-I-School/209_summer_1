@@ -1,0 +1,48 @@
+{% extends "template.html" %}
+
+{% block title %}Sources{% endblock %}
+{% set active_page = "sources"%}
+{% set search = "true"%}
+
+{% block main %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Sources</h1>
+        <li>
+            <a href="https://worldhappiness.report/data">World Happiness Report</a>
+        </li>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h1 class="display-5">Data Source</h1>
+        <p>
+            We will source our data directly from the World Happiness Report website. This website provides downloadable data on the happiness measures and variables utilized in their annual reports. It also includes a dashboard we will improve comprehensively.
+        </p>
+        <p>
+            For background, the WHR was developed to bring “more attention to happiness and well-being as criteria for government policy”. The organization assesses the happiness of 130 countries and “shows how the science of happiness explains personal and national variations in happiness”.
+        </p>
+        <p>
+            The happiness scores for each country are based on surveys with sample sizes of around a thousand respondents per country, per year. The report also includes data on “GDP per capita, social support, healthy life expectancy, freedom, generosity, and corruption” and estimates how these six variables “explain the variation across countries” in happiness.
+        </p>
+    </div>
+    <hr>
+    <div class="row">
+        <h1 class="display-5">Summary</h1>
+        <p>
+            We have copied from our Final Project Exploratory Visualization and our Midterm Presentation, both of which we have previously submitted.
+        </p>
+        <p>
+            The variables we chose, our charts and our analysis often copy or are adapted from the World Happiness Report.
+            Our choice of chart types, our chart design choices and our construction of the charts, as well as our comments on them, usually draw from live sessions, async lectures, assignments and/or readings.
+            Our work may also draw from examples provided of prior students’ final projects.
+        </p>
+        <p>
+            We have utilized the Data Dictionary provided by the World Happiness Report in working on this project. This may not be shown in these specific dashboards/charts.
+            In addition to the data provided on the World Happiness Report website, we also utilized an xls “Yearly trajectory by age group” provided upon e-mail request by the WHR Production Editor.
+        </p>
+    </div>
+</div> <!-- /container -->
+{% endblock %}

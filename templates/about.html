@@ -1,0 +1,58 @@
+{% extends "template.html" %}
+
+{% block title %}About Us{% endblock %}
+{% set active_page = "about"%}
+{% set search = "true"%}
+
+{% block main %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">About Us</h1>
+        <p>
+            Go Bears! 🧸
+        </p>
+        <img src="{{ url_for('static', filename='images/ischool.jpg') }}" alt="UC Berkeley School of Information" width="1100">
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h1 class="display-5">Who We Are</h1>
+        <p>
+            We are a group of UC Berkeley School of Information students pursuing the Master's in Data Science and Information.
+            This project was conducted during the summer session of 2024.
+            Through our data visualization class, we learned about D3, Altair, and Tableau.
+            Using our new acquired skills, we wanted to explore what impacts happiness and present our findings to a larger audience.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h2 style="text-align: center">Scott Thompson</h2>
+            <img src="{{ url_for('static', filename='images/scott.jpeg') }}" alt="Scott Thompson" width="250">
+        </div>
+        <div class="col">
+            <h2 style="text-align: center">Paul Choi</h2>
+            <img src="{{ url_for('static', filename='images/paul.jpg') }}" alt="Paul Choi" width="250">
+        </div>
+        <div class="col">
+            <h2 style="text-align: center">Shehbaz Virk</h2>
+            <img src="{{ url_for('static', filename='images/shehbaz.jpeg') }}" alt="Shehbaz Virk" width="250">
+        </div>
+        <div class="col">
+            <h2 style="text-align: center">Xinyi Zhu</h2>
+            <img src="{{ url_for('static', filename='images/xinyi.png') }}" alt="Xinyi Zhu" width="250">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <h1 class="display-5">Target Audience</h1>
+        <p>
+            Our target users include a combination of individuals, government agencies, non-profit organizations, and general business decision-makers. 
+            The information presented in our dashboard will be relevant for a diverse audience given the insights can be applied across many use cases. 
+            For example, it may help non-profit organizations target funding to areas with a high potential impact on a nation’s happiness, or individuals evaluate an offer from their employer to relocate to another country.
+        </p>
+    </div>
+</div> <!-- /container -->
+{% endblock %}

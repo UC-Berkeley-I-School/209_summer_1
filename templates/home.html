@@ -1,0 +1,53 @@
+{% extends "template.html" %}
+
+{% block title %}Home{% endblock %}
+{% set active_page = "home"%}
+{% set search = "true"%}
+
+{% block main %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Hello, happiness!</h1>
+        <br>
+        <p>
+            We will give users easy access to information on global happiness through an interactive, web-hosted visualization tool that utilizes data from the World Happiness Report (WHR). 
+            Our project will create a dashboard that enables users to freely toggle between and compare various happiness metrics in any way they see fit, whether that be looking at a specific contributor to happiness across the world or a time series analysis of the rate of change in a country’s happiness score over time.</p>
+        </p>
+        <hr>
+        <h2 class="display-5">Tasks</h2>
+        <p>
+            The primary task for our visualization tool is to answer key questions on happiness based on a range of topics and compare these rankings relative to countries. 
+            Another task is to learn about these trends over time and enable the user to leave our tool with conclusions or with more follow-up questions for the user to return to the site in search of more answers. 
+            Ultimately, our end goal is to be a trusted analytical tool for all users when thinking about global and national happiness.
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Dashboard 1</h2>
+            <p>
+            Happiness Across Countries and Time
+            </p>
+            <p><a class="btn btn-secondary" href="{{ url_for('dash_1') }}" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Dashboard 2</h2>
+            <p>
+            Happiness and Other Variables
+            </p>
+            <p><a class="btn btn-secondary" href="{{ url_for('dash_2') }}" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Dashboard 3</h2>
+            <p>
+            Happiness across Age Groups
+            </p>
+            <p><a class="btn btn-secondary" href="{{ url_for('dash_3') }}" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
+</div> <!-- /container -->
+{% endblock %}
