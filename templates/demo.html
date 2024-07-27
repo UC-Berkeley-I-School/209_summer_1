@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+
+{% block title %}Demo{% endblock %}
+{% set active_page = "demo"%}
+
+{% block main %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-4">Demo</h1>
+        <p>
+            Here is a quick walkthrough demo.
+        <p>
+    </div>
+</div>
+
+<div class="container">
+    <iframe width="1200" 
+            height="900" 
+            src="https://www.youtube.com/embed/e-hMKIN2n3g?si=U-GytfT2cyQAnmWz" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+</div> <!-- /container -->
+{% endblock %}

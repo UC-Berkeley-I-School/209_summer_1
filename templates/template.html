@@ -14,6 +14,9 @@
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/happiness.css') }}">
     </head>
@@ -32,27 +35,28 @@
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item {{ 'active' if active_page == 'home' else ''}}">
-                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                        <a class="nav-link" href="{{ url_for('home') }}"><i class="fa fa-fw fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item {{ 'active' if active_page == 'dash_1' else ''}}">
-                        <a class="nav-link" href="{{ url_for('dash_1') }}">Dashboard 1</a>
+                        <a class="nav-link" href="{{ url_for('dash_1') }}"><i class="fa fa-area-chart"></i> Countries Over Time</a>
                     </li>
                     <li class="nav-item {{ 'active' if active_page == 'dash_2' else ''}}">
-                        <a class="nav-link" href="{{ url_for('dash_2') }}">Dashboard 2</a>
+                        <a class="nav-link" href="{{ url_for('dash_2') }}"><i class="fa fa-area-chart"></i> Additional Variables</a>
                     </li>
                     <li class="nav-item {{ 'active' if active_page == 'dash_3' else ''}}">
-                        <a class="nav-link" href="{{ url_for('dash_3') }}">Dashboard 3</a>
+                        <a class="nav-link" href="{{ url_for('dash_3') }}"><i class="fa fa-area-chart"></i> Age Groups</a>
                     </li>
-                    <li class="nav-item {{ 'active' if active_page == 'report' else ''}}">
-                        <a class="nav-link" href="{{ url_for('report') }}">Report</a>
+                    <li class="nav-item {{ 'active' if active_page == 'demo' else ''}}">
+                        <a class="nav-link" href="{{ url_for('demo') }}"><i class="fa fa-youtube-play"></i> Demo</a>
                     </li>
-                    <li class="nav-item {{ 'active' if active_page == 'sources' else ''}}">
-                        <a class="nav-link" href="{{ url_for('sources') }}">Sources</a>
+                    <li class="nav-item {{ 'active' if active_page == 'about' else ''}}">
+                        <a class="nav-link" href="{{ url_for('about') }}"><i class="fa fa-address-book-o"></i> About</a>
                     </li>
                     <li class="nav-item dropdown {{ 'active' if active_page == 'about' else ''}}">
-                        <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team</a>
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-linkedin-square"></i> Team
+                        </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="{{ url_for('about') }}">About Us</a>
                             <a class="dropdown-item" href="https://www.linkedin.com/in/scottthompson1">Scott Thompson</a>
                             <a class="dropdown-item" href="https://www.linkedin.com/in/pchoi626">Paul Choi</a>
                             <a class="dropdown-item" href="https://www.linkedin.com/in/shehbazvirk">Shehbaz Virk</a>

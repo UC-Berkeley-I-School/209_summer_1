@@ -10,44 +10,104 @@
     <div class="container">
         <h1 class="display-3">Hello, happiness!</h1>
         <br>
-        <p>
-            We will give users easy access to information on global happiness through an interactive, web-hosted visualization tool that utilizes data from the World Happiness Report (WHR). 
-            Our project will create a dashboard that enables users to freely toggle between and compare various happiness metrics in any way they see fit, whether that be looking at a specific contributor to happiness across the world or a time series analysis of the rate of change in a country’s happiness score over time.</p>
-        </p>
-        <hr>
-        <h2 class="display-5">Tasks</h2>
-        <p>
-            The primary task for our visualization tool is to answer key questions on happiness based on a range of topics and compare these rankings relative to countries. 
-            Another task is to learn about these trends over time and enable the user to leave our tool with conclusions or with more follow-up questions for the user to return to the site in search of more answers. 
-            Ultimately, our end goal is to be a trusted analytical tool for all users when thinking about global and national happiness.
-        </p>
+
+        <table>
+            <tr>
+                <th>Dashboard</th>
+                <th>Tasks</th>
+                <th>
+                    Data
+                    <li>From 2005 to 2023</li>
+                    <li>For 130+ countries</li>
+                </th>
+            </tr>
+            <tr>
+                <td><a class="btn btn-secondary" href="{{ url_for('dash_1') }}" role="button"><i class="fa fa-area-chart"></i> Countries Over Time &raquo;</a></td>
+                <td>
+                    <ul>
+                        <li>Enjoy exploring where people are happiest.</li>
+                        <li>Search for the happiness of a specific country at a certain time.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Happiness Scores</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="btn btn-secondary" href="{{ url_for('dash_2') }}" role="button"><i class="fa fa-area-chart"></i> Additional Variables &raquo;</a></td>
+                <td>
+                    <ul>
+                        <li>Analyze & Discover Happiness Scores</li>
+                        <li>Social / Health / Economic impact on happiness.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Happiness Scores</li>
+                        <li>Generosity</li>
+                        <li>GDP Per Capita</li>
+                        <li>Freedom</li>
+                        <li>Corruption</li>
+                        <li>Social Support</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="btn btn-secondary" href="{{ url_for('dash_3') }}" role="button"><i class="fa fa-area-chart"></i> Age Groups &raquo;</a></td>
+                <td>
+                    <ul>
+                        <li>Query & Compare Happiness Scores</li>
+                        <li>Age group impact on happiness.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Happiness Scores</li>
+                        <li>Age Below 30</li>
+                        <li>Age 30-44</li>
+                        <li>Age 45-59</li>
+                        <li>Age 60 and Above</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 
 <div class="container">
     <!-- Example row of columns -->
     <div class="row">
-        <div class="col-md-4">
-            <h2>Dashboard 1</h2>
-            <p>
-            Happiness Across Countries and Time
-            </p>
-            <p><a class="btn btn-secondary" href="{{ url_for('dash_1') }}" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Dashboard 2</h2>
-            <p>
-            Happiness and Other Variables
-            </p>
-            <p><a class="btn btn-secondary" href="{{ url_for('dash_2') }}" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Dashboard 3</h2>
-            <p>
-            Happiness across Age Groups
-            </p>
-            <p><a class="btn btn-secondary" href="{{ url_for('dash_3') }}" role="button">View details &raquo;</a></p>
-        </div>
+        <h1 class="display-5">Purpose</h1>
+        <p>
+            We will give users easy access to information on global happiness through an interactive, web-hosted visualization tool that utilizes data from the World Happiness Report (WHR). 
+            Our project will create a dashboard that enables users to freely toggle between and compare various happiness metrics in any way they see fit, whether that be looking at a specific contributor to happiness across the world or a time series analysis of the rate of change in a country’s happiness score over time.</p>
+        </p>
+    </div>
+    <hr>
+
+    <div class="row">
+        <h1 class="display-5">Tasks</h1>
+        <p>
+            The primary task for our visualization tool is to answer key questions on happiness based on a range of topics and compare these rankings relative to countries. 
+            Another task is to learn about these trends over time and enable the user to leave our tool with conclusions or with more follow-up questions for the user to return to the site in search of more answers. 
+            Ultimately, our end goal is to be a trusted analytical tool for all users when thinking about global and national happiness.
+        </p>
+    </div>
+    <hr>
+
+    <div class="row">
+        <h1 class="display-5">Data Source</h1>
+        <p>
+            We will source our data directly from the World Happiness Report website. This website provides downloadable data on the happiness measures and variables utilized in their annual reports. It also includes a dashboard we will improve comprehensively.
+        </p>
+        <p>
+            For background, the WHR was developed to bring “more attention to happiness and well-being as criteria for government policy”. The organization assesses the happiness of 130 countries and “shows how the science of happiness explains personal and national variations in happiness”.
+        </p>
+        <p>
+            The happiness scores for each country are based on surveys with sample sizes of around a thousand respondents per country, per year. The report also includes data on “GDP per capita, social support, healthy life expectancy, freedom, generosity, and corruption” and estimates how these six variables “explain the variation across countries” in happiness.
+        </p>
     </div>
 </div> <!-- /container -->
 {% endblock %}

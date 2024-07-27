@@ -17,9 +17,9 @@ def dash_2():
 def dash_3():
     return render_template("dash_3.html")
 
-@app.route("/report")
-def report():
-    return render_template("report.html")
+@app.route("/demo")
+def demo():
+    return render_template("demo.html")
 
 @app.route("/sources")
 def sources():
