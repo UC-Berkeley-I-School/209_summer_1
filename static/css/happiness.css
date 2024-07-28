@@ -21,3 +21,8 @@ th, td {
 }
 
 tr:hover {background-color: #D6EEEE;}
+
+.jumbotron {
+  padding: 30px;
+  padding-bottom: 0.5px;
+}
