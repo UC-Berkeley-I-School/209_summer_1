@@ -3,12 +3,6 @@ body {
   padding-top: 3.5rem;
 }
 
-.pdf {
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
