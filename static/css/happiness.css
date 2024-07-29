@@ -9,6 +9,19 @@ body {
   padding-bottom: 10px;
 }
 
+.years {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+.row ul {
+  flex: 0 0 100%;
+}
+
 table {
   border-collapse: collapse;
   width: 80%;
