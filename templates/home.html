@@ -7,7 +7,29 @@
 {% block main %}
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
-    <h1 class="display-4 tab">Hello, happiness!</h1>
+    <div class="container">
+        <h1 class="display-4">Hello, happiness!</h1>
+        <br>
+        <div class="row">
+            <h3 class="display-5">Purpose and Users</h3>
+            <p>
+                Provide easy access to global happiness information through interactive, web-hosted visualization dashboards tool that utilize data from the World Happiness Report (WHR). 
+                Intended users include individuals  considering different countries in the world, NGOs and nonprofits identifying where to direct support and Governments looking to improve life for their constituents.
+            </p>
+        </div>
+        <hr>
+        <div class="row">
+            <h3 class="display-5">Data Source</h3>
+            <p>
+                We primarily utilize data from the World Happiness Report.
+                This team provides comprehensive annual reports on “the state of happiness in the world today”. Our project seeks to recreate, add to and improve upon visualizations in the World Happiness Report and website.
+                In addition to data from their website, we utilize age group level data kindly provided to us upon request by their Production Editor.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
     <table>
         <tr>
             <th>Dashboard</th>
@@ -72,25 +94,4 @@
     <br>
     <p class="years"><i class="fa-solid fa-info"></i> All data is between 2005 and 2023.</p>
 </div>
-
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <h1 class="display-6">Purpose and Users</h1>
-        <p>
-            Provide easy access to global happiness information through interactive, web-hosted visualization dashboards tool that utilize data from the World Happiness Report (WHR). 
-            Intended users include individuals  considering different countries in the world, NGOs and nonprofits identifying where to direct support and Governments looking to improve life for their constituents.
-        </p>
-    </div>
-    <hr>
-
-    <div class="row">
-        <h1 class="display-6">Data Source</h1>
-        <p>
-            We primarily utilize data from the World Happiness Report.
-            This team provides comprehensive annual reports on “the state of happiness in the world today”. Our project seeks to recreate, add to and improve upon visualizations in the World Happiness Report and website.
-            In addition to data from their website, we utilize age group level data kindly provided to us upon request by their Production Editor.
-        </p>
-    </div>
-</div> <!-- /container -->
 {% endblock %}
