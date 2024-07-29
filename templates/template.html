@@ -64,12 +64,6 @@
                         </div>
                     </li>
                 </ul>
-
-                {% if search == "true" %}
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" id="myInput" type="text" placeholder="Search" aria-label="Search">
-                </form>
-                {% endif %}
             </div>
         </nav>
 
@@ -87,18 +81,5 @@
         <script>window.jQuery || document.write('<script src="/static/js/jquery-slim.min.js"><\/script>')</script>
         <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
         <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-
-        {% if search == "true" %}
-        <script>
-            $(document).ready(function(){
-                $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("main *").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-                });
-            });
-        </script>
-        {% endif %}
     </body>
 </html>
