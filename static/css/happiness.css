@@ -14,11 +14,7 @@ body {
   padding-left: 10%;
 }
 
-.row {
-  flex-wrap: wrap;
-}
-
-.row ul {
+ul {
   flex: 0 0 100%;
 }
 
