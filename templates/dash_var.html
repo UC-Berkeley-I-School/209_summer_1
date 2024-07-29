@@ -1,12 +1,12 @@
 {% extends "template.html" %}
 
-{% block title %}Dashboard 1{% endblock %}
-{% set active_page = "dash_1"%}
+{% block title %}Additional Variables{% endblock %}
+{% set active_page = "dash_var"%}
 
 {% block main %}
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
-    <h1 class="display-4 tab">Happiness Across Countries Over Time</h1>
+    <h1 class="display-4 tab">Happiness and Additional Variables</h1>
     <table>
         <tr>
             <th>Tasks</th>
@@ -16,21 +16,26 @@
         <tr>
             <td>
                 <ul>
-                    <li>Enjoy exploring where people are happiest.</li>
-                    <li>Search for happiness of a specific country at a certain time.</li>
+                    <li>Analyze & Discover relationships with happiness</li>
+                    <li>Examine Social / Health / Economic variables</li>
                 </ul>
             </td>
             <td>
                 <ul>
                     <li>Happiness Scores</li>
+                    <li>Generosity</li>
+                    <li>GDP Per Capita</li>
+                    <li>Freedom</li>
+                    <li>Corruption</li>
+                    <li>Social Support</li>
                     <li>130+ Countries</li>
                 </ul>
             </td>
             <td>
                 <ul>
-                    <li>Find happiness score of a specific country</li>
-                    <li>Explore how happiness scores of a specific country have changed over time</li>
-                    <li>Compare happiness scores across countries in a specific year</li>
+                    <li>Find the relationship between social support and happiness</li>
+                    <li>Identify which factors have the strongest correlation with happiness</li>
+                    <li>Discover which countries have the lowest perceptions of corruption scores</li>
                 </ul>
             </td>
         </tr>
@@ -40,35 +45,33 @@
 </div>
 
 <div class="container-fluid">
-    <div class='tableauPlaceholder mx-auto' id='viz1722195565399' style='position: relative'>
+    <div class='tableauPlaceholder mx-auto' id='viz1722112376835' style='position: relative'>
         <noscript>
-        <a href='#'>
-            <img alt='Happiness Scores ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209ProjectDashboard1&#47;Dashboard1&#47;1_rss.png' style='border: none' />
-        </a>
+            <a href='#'>
+                <img alt='Additional Variables' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WH&#47;WHR_0722&#47;Dashboard2&#47;1_rss.png' style='border: none' />
+            </a>
         </noscript>
         <object class='tableauViz'  style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
             <param name='embed_code_version' value='3' /> 
             <param name='site_root' value='' />
-            <param name='name' value='209ProjectDashboard1&#47;Dashboard1' />
+            <param name='name' value='WHR_0722&#47;Dashboard2' />
             <param name='tabs' value='no' />
             <param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209ProjectDashboard1&#47;Dashboard1&#47;1.png' /> 
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WH&#47;WHR_0722&#47;Dashboard2&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' /><param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
         </object>
     </div>                
     <script type='text/javascript'>                    
-        var divElement = document.getElementById('viz1722195565399');                    
+        var divElement = document.getElementById('viz1722112376835');                    
         var vizElement = divElement.getElementsByTagName('object')[0];                    
         
         if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1527px';} 
         else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1527px';} 
-        else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     
+        else { vizElement.style.width='100%';vizElement.style.height='1177px';}                    
         
         var scriptElement = document.createElement('script');                    
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    

@@ -5,17 +5,17 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/dash_1")
-def dash_1():
-    return render_template("dash_1.html")
+@app.route("/dash_time")
+def dash_time():
+    return render_template("dash_time.html")
 
-@app.route("/dash_2")
-def dash_2():
-    return render_template("dash_2.html")
+@app.route("/dash_var")
+def dash_var():
+    return render_template("dash_var.html")
 
-@app.route("/dash_3")
-def dash_3():
-    return render_template("dash_3.html")
+@app.route("/dash_age")
+def dash_age():
+    return render_template("dash_age.html")
 
 @app.route("/demo")
 def demo():

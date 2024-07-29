@@ -37,14 +37,14 @@
                     <li class="nav-item {{ 'active' if active_page == 'home' else ''}}">
                         <a class="nav-link" href="{{ url_for('home') }}"><i class="fa fa-fw fa-home"></i> Home</a>
                     </li>
-                    <li class="nav-item {{ 'active' if active_page == 'dash_1' else ''}}">
-                        <a class="nav-link" href="{{ url_for('dash_1') }}"><i class="fa fa-area-chart"></i> Countries Over Time</a>
+                    <li class="nav-item {{ 'active' if active_page == 'dash_time' else ''}}">
+                        <a class="nav-link" href="{{ url_for('dash_time') }}"><i class="fa fa-area-chart"></i> Countries Over Time</a>
                     </li>
-                    <li class="nav-item {{ 'active' if active_page == 'dash_2' else ''}}">
-                        <a class="nav-link" href="{{ url_for('dash_2') }}"><i class="fa fa-area-chart"></i> Additional Variables</a>
+                    <li class="nav-item {{ 'active' if active_page == 'dash_var' else ''}}">
+                        <a class="nav-link" href="{{ url_for('dash_var') }}"><i class="fa fa-area-chart"></i> Additional Variables</a>
                     </li>
-                    <li class="nav-item {{ 'active' if active_page == 'dash_3' else ''}}">
-                        <a class="nav-link" href="{{ url_for('dash_3') }}"><i class="fa fa-area-chart"></i> Age Groups</a>
+                    <li class="nav-item {{ 'active' if active_page == 'dash_age' else ''}}">
+                        <a class="nav-link" href="{{ url_for('dash_age') }}"><i class="fa fa-area-chart"></i> Age Groups</a>
                     </li>
                     <li class="nav-item {{ 'active' if active_page == 'demo' else ''}}">
                         <a class="nav-link" href="{{ url_for('demo') }}"><i class="fa fa-youtube-play"></i> Demo</a>
@@ -76,7 +76,7 @@
         <main role="main">{% block main %}{% endblock %}</main>
         <hr>
 
-        <footer class="container">
+        <footer class="years">
             <p>&copy; UC Berkeley School of Information 2024</p>
         </footer>
 
